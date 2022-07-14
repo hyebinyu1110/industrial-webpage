@@ -84,18 +84,19 @@ figure{
 	height: calc(100vh - 120px);
 	background: #000;
 	position: relative;
-	overflow: hidden;
 	padding-top: 250px;
+	overflow: hidden;
 }
 
 figure video{
-	object-fit: cover; /*영상을 figure 영역안에 꽉 차도록 설정*/
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 	opacity: 0.3;
 	position: absolute;
-	top:0px;
+	top: 0px;
 	left: 0px;
+
 }
 
 figure .inner{
@@ -111,22 +112,23 @@ figure .inner h1{
 }
 
 figure .inner p{
-	font: 16px/1.4 "arial";
+	font: normal 16px/1.4 "arial";
 	color: #888;
 	margin-bottom: 60px;
+
 }
+
 
 figure .inner a{
 	display: block;
 	width: 400px;
 	height: 30px;
-	border: 1px solid#bbb;
+	border: 1px solid #bbb;
 	font: bold 11px/30px "arial";
 	color: #fff;
 	text-align: center;
 	letter-spacing: 1px;
 	transition: all 0.5s;
-
 }
 
 figure .inner a:hover{
@@ -154,10 +156,9 @@ section .inner h1{
 
 section .inner .wrap{
 	width: 100%;
-
 }
 
-section .inner .wrap::after{ /*자식요소인 article의 float 해제*/
+section .inner .wrap::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -170,17 +171,22 @@ section .inner .wrap article{
 }
 
 section .inner .wrap article:last-child{
-	margin-right: 0px;
+margin-right: 0px;
 }
 
 section .inner .wrap article h2{
 	margin-bottom: 10px;
-
 }
+
 
 section .inner .wrap article h2 a{
 	font: bold 16px/1 "arial";
 	color: #555;
+}
+
+section .inner .wrap article  p{
+	font: 14px/1.4 "arial";
+	color: #777;
 }
 
 section .inner .wrap article .pic{
@@ -189,11 +195,11 @@ section .inner .wrap article .pic{
 	background: #333;
 	margin-bottom: 15px;
 	position: relative;
-	overflow: hidden; /*부모요소의 범위를 넘어가는 자식요소의 부분은 보이지 않도록 처리한다.*/
+	overflow: hidden;
 }
 
 section .inner .wrap article .pic img{
-	object-fit: cover; /*pic프레임안에 이미지를 꽉 채움*/
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
@@ -202,14 +208,14 @@ section .inner .wrap article .pic img{
 footer{
 	width: 100%;
 	background: #333;
-	padding: 100px 0px; 
-	border-top:  1px solid #888;
+	padding: 100px 0px;
+	border-top: 1px solid #888;
+
 }
 
 footer .inner{
 	width: 1180px;
 	margin: 0px auto;
-
 }
 
 footer .inner .upper{
@@ -218,8 +224,7 @@ footer .inner .upper{
 	padding-bottom: 20px;
 }
 
-
-footer .inner .upper::after{ /*상단영역 float 해제*/
+footer .inner .upper::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -227,8 +232,6 @@ footer .inner .upper::after{ /*상단영역 float 해제*/
 
 footer .inner .upper h1{
 	float: left;
-	font: bold 24px/1 "arial";
-	color: #666;
 }
 
 footer .inner .upper ul{
@@ -237,8 +240,7 @@ footer .inner .upper ul{
 
 footer .inner .upper ul li{
 	float: left;
-	margin-left:20px;
-
+	margin-left: 20px;
 }
 
 footer .inner .upper ul li a{
@@ -249,6 +251,7 @@ footer .inner .upper ul li a{
 footer .inner .lower{
 	width: 100%;
 	padding-top: 20px;
+
 }
 
 footer .inner .lower address{
@@ -263,7 +266,3 @@ footer .inner .lower p{
 	font: 12px/1 "arial";
 	color: #777;
 }
-
-
-
-
